@@ -7,6 +7,7 @@ import os
 import subprocess
 
 #Codigo de Termita
+
 pre1 = input( Fore.BLUE + "Bienvenido al software Termita este software esta diseñado para desistalar cualquier programa o aplicacion de su dispositivo pulse 1 para continuar" + Style.RESET_ALL)
 if pre1 == "1" :
     print(Fore.RED + "Error" + Style.RESET_ALL)
