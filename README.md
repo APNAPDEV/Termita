@@ -1,1 +1,1 @@
-This codes are a prototype of a final project made by a beginner 
+These codes are a prototype of a final project made by a beginner 
