@@ -74,6 +74,12 @@ while segundos > 0:
                     
                     app_a_desinstalar = input(Fore.BLUE + "Ingrese el nombre de la aplicación a desinstalar: " + Style.RESET_ALL)
                     desinstalar_aplicacion(app_a_desinstalar) 
+                ultima_var = input("Pulse cualquier tecla para cerrar la consola")
+   
+   
+   
+   
+   
     else :
         pass
 
