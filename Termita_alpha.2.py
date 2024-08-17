@@ -10,7 +10,7 @@ import winreg
 #Complementos del codigo para color usar Fore.color + variable + Style.RESET_ALL
 
 #codigo en bruto
-#Presentacion + permisos de admministrador
+
 pre1 = input( Fore.BLUE + "Bienvenido al software Termita este software esta diseñado para desistalar cualquier programa o aplicacion de su dispositivo pulse 1 para continuar" + Style.RESET_ALL)
 if pre1 == 1 :
     print(Fore.RED + "Error" + Style.RESET_ALL)

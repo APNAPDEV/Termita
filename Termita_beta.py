@@ -1,7 +1,7 @@
 
 #Complementos del codigo para color usar Fore.color + variable + Style.RESET_ALL
 
-from colorama import Fore,Style, init
+from colorama import Fore,Style, init 
 import time
 import random
 import winreg
