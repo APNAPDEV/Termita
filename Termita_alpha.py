@@ -1,7 +1,5 @@
 #Codigo de Termita
 import time
-import random
-import os
 import subprocess
 import winreg
 
