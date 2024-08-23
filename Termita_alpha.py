@@ -1,6 +1,4 @@
 #Codigo de Termita
-
-from colorama import Fore,Style, init
 import time
 import random
 import os
@@ -10,23 +8,23 @@ import winreg
 #Complementos del codigo para color usar Fore.color + variable + Style.RESET_ALL
 
 
-pre1 = input( Fore.BLUE + "Bienvenido al software Termita este software esta diseñado para desistalar cualquier programa o aplicacion de su dispositivo pulse 1 para continuar" + Style.RESET_ALL)
+pre1 = input("Bienvenido al software Termita este software esta diseñado para desistalar cualquier programa o aplicacion  de su dispositivo pulse 1 para continuar")
 if pre1 == "1" :
-    print(Fore.RED + "Error" + Style.RESET_ALL)
+    print("Error")
     segundos = 3
     while segundos > 0:
         time.sleep(1)
         segundos -= 1
-        pre2 = input(Fore.YELLOW + "Termita necesita ejecutarse como administrador, estos permisos seran retirados al finalizar la operación para darselos pulse 1" + Style.RESET_ALL)
+        pre2 = input("Termita necesita ejecutarse como administrador, estos permisos seran retirados al finalizar la operación para darselos pulse 1")
         if pre2 == "1" : 
-                print(Fore.BLUE + "Reintentando" + Style.RESET_ALL)
+                print( "Reintentando")
         segundos = 3
         while segundos > 0:
                 print(segundos)
                 time.sleep(1)
                 segundos -= 1
                 if segundos == 0 :
-                    print(Fore.GREEN + "Analizando dispositivo le pedimos que no lo desconecte" + Style.RESET_ALL)
+                    print("Analizando dispositivo le pedimos que no lo desconecte" )
                     segundos = 3
                     while segundos > 0:
                         time.sleep(1)
@@ -60,23 +58,23 @@ if pre1 == "1" :
                                     if nombre == nombre_aplicacion:
                                         uninstall_string = winreg.QueryValueEx(app_clave, 'UninstallString')[0]
                                         subprocess.call(uninstall_string, shell=True)
-                                        print(Fore.YELLOW + f"{nombre_aplicacion} ha sido desinstalada." + Style.RESET_ALL)
+                                        print( f"{nombre_aplicacion} ha sido desinstalada.")
                                         return
                             except FileNotFoundError:
                                 continue
                         
                         winreg.CloseKey(clave)
-                        print(Fore.RED + f"No se encontró la aplicación: {nombre_aplicacion}" + Style.RESET_ALL)
+                        print( f"No se encontró la aplicación: {nombre_aplicacion}" )
 
                     if __name__ == "__main__":
-                        print(Fore.LIGHTBLUE_EX + "Aplicaciones instaladas:" + Style.RESET_ALL)
+                        print( "Aplicaciones instaladas:")
                         aplicaciones = listar_aplicaciones()
                         for app in aplicaciones:
                             print(app)
                         
-                        app_a_desinstalar = input(Fore.BLUE + "Ingrese el nombre de la aplicación a desinstalar: " + Style.RESET_ALL)
+                        app_a_desinstalar = input("Ingrese el nombre de la aplicación a desinstalar: ")
                         desinstalar_aplicacion(app_a_desinstalar) 
-                    ultima_var = input(Fore.BLUE + "Pulse cualquier tecla para cerrar la consola" + Style.RESET_ALL)
+                    ultima_var = input("Pulse cualquier tecla para cerrar la consola")
     
     
     
