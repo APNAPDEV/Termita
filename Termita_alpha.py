@@ -2,7 +2,8 @@
 import time
 import subprocess
 import winreg
-
+from colorama import Fore, Back, Style, init
+init(autoreset=True)
 #Complementos del codigo para color usar Fore.color + variable + Style.RESET_ALL
 
 
