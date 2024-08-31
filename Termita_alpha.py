@@ -2,9 +2,6 @@
 import time
 import subprocess
 import winreg
-from colorama import Fore, Back, Style, init
-init(autoreset=True)
-#Complementos del codigo para color usar Fore.color + variable + Style.RESET_ALL
 
 
 pre1 = input("Bienvenido al software Termita este software esta diseñado para desistalar cualquier programa o aplicacion  de su dispositivo pulse 1 para continuar")
