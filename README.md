@@ -1,7 +1,3 @@
 This codes are a prototype of a final project made by a beginner 
 
-Termita_Alpha.1 is a very close view of the final project 
-
-Termita_Alpha.2 is a more optimized code
-
----IT,S JUST THE CODE AT THE MOMENT, NOT AN EXECUTABLE---
+First you need open the folder dist in dist open Nebulas_software and don,t worry you can execute arent have any virus windows defender detected because use part of the console by Powershell thanks for dowload!!!
